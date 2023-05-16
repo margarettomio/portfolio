@@ -1,0 +1,191 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+	background: #1b1210;
+	height: 20vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.name {
+	font-size: 45px;
+	font-family: Garamond;
+	color: #ffffff;
+	display: flex;
+	margin: 0px 10 40;
+	margin-right: 80px;
+	margin-left: 50px;
+}
+
+.main {
+  flex-grow: 3;
+  display: flex;
+}
+
+.footer {
+  background: #1b1210;
+}
+	
+#main > article {
+	flex: 1;
+}
+	
+#main > nav, 
+#main > aside {
+	flex: 0 0 20vw;
+}
+	
+#main > nav {
+	order: -1;
+}
+	
+header, footer, article, nav, aside {
+	padding: 1em;
+}
+	
+article {
+	background: #1a4433;
+	color: #ffffff;
+	width: 80%;
+	font-family: Bookman Old Style;
+}
+
+nav {
+	background: #153629;
+	width: 10%;
+	color: #ffffff;
+	font-family: Bookman Old Style;
+}
+	
+aside {
+
+	background: #215540;
+	width: 10%;
+	color: #ffffff;
+	font-family: Bookman Old Style;
+}
+	
+footer {
+	height: 20vh;
+}
+	
+.footer p{
+	color: #ffffff;
+	text-align: center;
+	font-family: Bookman Old Style;
+}
+	
+.title {
+	font-size: 36px;
+	padding-top: 10px;
+	text-align: center;
+}
+	
+.menu {
+	flex-grow: 1;
+}
+
+.menu ul {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 2px 0 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 18px;
+	list-style: none;
+}
+
+.menu li {
+	margin-right: 20px;
+}
+	
+.menu li:last-child {
+	margin-right: 0;
+}
+	
+.menu a {
+	padding: 8px 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.menu a, .menu .active {  
+	display: block;
+	padding: 8px 10px;
+	text-transform: uppercase;
+	letter-spacing: .27em;
+}
+
+.menu .active {
+	color: #fff;
+	background-color: #ff3d00;
+	border-radius: 8px;
+}
+	
+.tel {
+	font-size: 12px;
+	line-height: 28px;
+}
+
+.tel a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-right: 20px;
+	font-family: Britannic;
+}
+
+.mailto {
+	font-size: 12px;
+	line-height: 28px;
+}
+
+.mailto a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-right: 20px;
+	font-family: Britannic;
+}
+
+.buttons {
+    margin: 1%;
+}
+
+.btn-hover {
+    width: 80px;
+	height: 45px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 35px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
