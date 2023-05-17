@@ -6,6 +6,6 @@
 
 "C#" - a folder where C# programming skills
 
-"Python" - a folder where little program
+"Python" - a folder where small programs
 
 "SQL" - a folder where a few of requests
