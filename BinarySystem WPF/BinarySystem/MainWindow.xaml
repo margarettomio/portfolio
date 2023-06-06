@@ -1,0 +1,125 @@
+﻿<Window x:Class="BinarySystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinarySystem"
+        mc:Ignorable="d"
+        Title="Сonversion" Height="200" Width="550">
+    
+    <Grid Background="#434343">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3.1*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3.1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Name="LabelTextBox"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="3"
+                 Margin="5"
+                 Background="#434343"
+                 Foreground="White"
+                 FontSize="15"
+                 Text="Conversion from decimal to binary and vice versa:"
+                 FontFamily="Cascadia Mono SemiBold"
+                 VerticalAlignment="Top"
+                 Padding="2 5"/>
+
+        <TextBox Name="RequestTextBox"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 Margin="5"
+                 FontFamily="Cascadia Mono SemiBold"
+                 FontSize="15"
+                 VerticalAlignment="Center"
+                 Padding="2 5"
+                 PreviewTextInput="RequestTextBox_PreviewTextInput" />
+        
+        <TextBox Name="ResponseTextBox"
+                 Grid.Row="1"
+                 Grid.Column="2"
+                 Margin="5"
+                 FontFamily="Cascadia Mono SemiBold"
+                 FontSize="15"
+                 IsReadOnly="True"
+                 VerticalAlignment="Center"
+                 Padding="2 5"/>
+        
+        <Button Name="ChangeConvertButton"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5"
+                Padding="5 5"
+                Content="Change"
+                FontFamily="Cascadia Mono SemiBold"
+                Background="#fecdf4"
+                BorderBrush="#fecdf4"
+                Foreground="#434343"
+                FontSize="15"
+                BorderThickness="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="ChangeConvertButton_Click"/>
+
+        <Grid Grid.Row="2"
+              Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="ClearButton"
+                    Grid.Column="0"
+                    Margin="5"
+                    Padding="10 5"
+                    Content="Clear"
+                    FontFamily="Cascadia Mono SemiBold"
+                    Background="#fecdf4"
+                    BorderBrush="#fecdf4"
+                    Foreground="#434343"
+                    FontSize="15"
+                    BorderThickness="1"
+                    VerticalAlignment="Top"
+                    Click="ClearButton_Click"/>
+
+            <Button Name="CopyButton"
+                    Grid.Column="1"
+                    Margin="5"
+                    Padding="10 5"
+                    Content="Copy"
+                    FontFamily="Cascadia Mono SemiBold"
+                    Background="#fecdf4"
+                    BorderBrush="#fecdf4"
+                    Foreground="#434343"
+                    FontSize="15"
+                    BorderThickness="1"
+                    VerticalAlignment="Top"
+                    Click="CopyButton_Click"/>
+        </Grid>
+        
+        <Button Name="ConvertButton"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin="5"
+                Padding="10 5"
+                Content="Convert"
+                FontFamily="Cascadia Mono SemiBold"
+                Background="#fecdf4"
+                BorderBrush="#fecdf4"
+                Foreground="#434343"
+                FontSize="15"
+                BorderThickness="1"
+                VerticalAlignment="Center"
+                Click="ConvertButton_Click"
+                IsDefault="True"/>
+    </Grid>
+</Window>

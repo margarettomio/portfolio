@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\bin\Debug\BinarySystem.exe.config
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\bin\Debug\BinarySystem.exe
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\bin\Debug\BinarySystem.pdb
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\App.g.cs
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem_MarkupCompile.cache
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem_MarkupCompile.lref
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.g.resources
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.Properties.Resources.resources
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.csproj.GenerateResource.cache
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.exe
+C:\Users\user\Desktop\всякое\js1\BinarySystem\BinarySystem\obj\Debug\BinarySystem.pdb
