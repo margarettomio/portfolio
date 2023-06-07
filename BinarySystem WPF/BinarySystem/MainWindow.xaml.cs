@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Controls;
 
 namespace BinarySystem
 {
@@ -12,6 +13,38 @@ namespace BinarySystem
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RequestTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            Regex fromZeroToOne = new Regex("^[0-1]+");
+
+            if (!Char.IsDigit(e.Text, 0) && _isDecimalToBinary)
+                e.Handled = true;
+            else if (!_isDecimalToBinary && !fromZeroToOne.IsMatch(e.Text))
+                e.Handled = true;
+        }
+
+        private void ChangeConvertButton_Click(object sender, RoutedEventArgs e)
+        {
+            _isDecimalToBinary = !_isDecimalToBinary;
+
+            if (!_isDecimalToBinary)
+            {
+                FirstTextBox.Text = "From binary";
+                SecondTextBox.Text = "to decimal";
+            }
+        }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            ResponseTextBox.Clear();
+        }
+
+        private void CopyButton_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(ResponseTextBox.Text);
         }
 
         private void ConvertButton_Click(object sender, RoutedEventArgs e)
@@ -34,32 +67,6 @@ namespace BinarySystem
                 }
                 ResponseTextBox.Text = result.ToString();
             }
-        }
-
-        private void RequestTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-
-            Regex fromZeroToOne = new Regex("^[0-1]+");
-
-            if (!Char.IsDigit(e.Text, 0) && _isDecimalToBinary)
-                e.Handled = true;
-            else if (!_isDecimalToBinary && !fromZeroToOne.IsMatch(e.Text))
-                e.Handled = true;
-        }
-
-        private void ClearButton_Click(object sender, RoutedEventArgs e)
-        {
-            ResponseTextBox.Clear();
-        }
-
-        private void CopyButton_Click(object sender, RoutedEventArgs e)
-        {
-            Clipboard.SetText(ResponseTextBox.Text);
-        }
-
-        private void ChangeConvertButton_Click(object sender, RoutedEventArgs e)
-        {
-            _isDecimalToBinary = !_isDecimalToBinary;
         }
     }
 }

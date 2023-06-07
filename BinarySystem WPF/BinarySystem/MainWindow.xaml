@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinarySystem"
         mc:Ignorable="d"
-        Title="Сonversion" Height="200" Width="550">
+        Title="Сonversion" Height="230" Width="550">
     
     <Grid Background="#434343">
         <Grid.RowDefinitions>
@@ -28,10 +28,41 @@
                  Background="#434343"
                  Foreground="White"
                  FontSize="15"
-                 Text="Conversion from decimal to binary and vice versa:"
+                 Text="Conversion from decimal to binary and vice versa"
                  FontFamily="Cascadia Mono SemiBold"
                  VerticalAlignment="Top"
                  Padding="2 5"/>
+
+        <TextBox Name="FirstTextBox"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Margin="5 1"
+                 Background="#434343"
+                 Foreground="White"
+                 FontSize="13"
+                 BorderBrush="#434343"
+                 Text="From decimal"
+                 IsReadOnly="True"
+                 FontFamily="Cascadia Mono SemiBold"
+                 VerticalAlignment="Bottom"
+                 Padding="2 5"
+                
+                 />
+
+        <TextBox Name="SecondTextBox"
+                 Grid.Row="0"
+                 Grid.Column="2"
+                 Margin="5 1"
+                 Background="#434343"
+                 Foreground="White"
+                 FontSize="13"
+                 BorderBrush="#434343"
+                 Text="to binary"
+                 IsReadOnly="True"
+                 FontFamily="Cascadia Mono SemiBold"
+                 VerticalAlignment="Bottom"
+                 Padding="2 5" 
+                 />
 
         <TextBox Name="RequestTextBox"
                  Grid.Row="1"
