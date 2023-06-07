@@ -45,9 +45,7 @@
                  IsReadOnly="True"
                  FontFamily="Cascadia Mono SemiBold"
                  VerticalAlignment="Bottom"
-                 Padding="2 5"
-                
-                 />
+                 Padding="2 5"/>
 
         <TextBox Name="SecondTextBox"
                  Grid.Row="0"
@@ -61,8 +59,7 @@
                  IsReadOnly="True"
                  FontFamily="Cascadia Mono SemiBold"
                  VerticalAlignment="Bottom"
-                 Padding="2 5" 
-                 />
+                 Padding="2 5"/>
 
         <TextBox Name="RequestTextBox"
                  Grid.Row="1"
@@ -72,7 +69,7 @@
                  FontSize="15"
                  VerticalAlignment="Center"
                  Padding="2 5"
-                 PreviewTextInput="RequestTextBox_PreviewTextInput" />
+                 PreviewTextInput="RequestTextBox_PreviewTextInput"/>
         
         <TextBox Name="ResponseTextBox"
                  Grid.Row="1"
