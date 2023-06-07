@@ -17,7 +17,6 @@ namespace BinarySystem
 
         private void RequestTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-
             Regex fromZeroToOne = new Regex("^[0-1]+");
 
             if (!Char.IsDigit(e.Text, 0) && _isDecimalToBinary)
